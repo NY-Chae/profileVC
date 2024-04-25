@@ -12,7 +12,7 @@
 		B9655A9D2BD75A6400A388B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9655A9C2BD75A6400A388B8 /* ProfileViewController.swift */; };
 		B9655AA02BD75A6400A388B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B9655A9F2BD75A6400A388B8 /* Base */; };
 		B9655AA22BD75A6600A388B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9655AA12BD75A6600A388B8 /* Assets.xcassets */; };
-		B9655AB02BD7745E00A388B8 /* CustomProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9655AAF2BD7745E00A388B8 /* CustomProfileCell.xib */; };
+		B9655AB02BD7745E00A388B8 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9655AAF2BD7745E00A388B8 /* ProfileTableViewCell.xib */; };
 		B9655AB12BD7745E00A388B8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9655AAE2BD7745E00A388B8 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		B9655AA12BD75A6600A388B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9655AA62BD75A6600A388B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9655AAE2BD7745E00A388B8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		B9655AAF2BD7745E00A388B8 /* CustomProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomProfileCell.xib; sourceTree = "<group>"; };
+		B9655AAF2BD7745E00A388B8 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B9655A9E2BD75A6400A388B8 /* Main.storyboard */,
-				B9655AAF2BD7745E00A388B8 /* CustomProfileCell.xib */,
+				B9655AAF2BD7745E00A388B8 /* ProfileTableViewCell.xib */,
 				B9655AAE2BD7745E00A388B8 /* ProfileTableViewCell.swift */,
 			);
 			path = view;
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9655AA22BD75A6600A388B8 /* Assets.xcassets in Resources */,
-				B9655AB02BD7745E00A388B8 /* CustomProfileCell.xib in Resources */,
+				B9655AB02BD7745E00A388B8 /* ProfileTableViewCell.xib in Resources */,
 				B9655AA02BD75A6400A388B8 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

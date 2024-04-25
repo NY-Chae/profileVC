@@ -15,7 +15,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        table.register(UINib(nibName: "CustomProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileList")
+        table.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileList")
         
         table.dataSource = self
         table.delegate = self
@@ -23,17 +23,17 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         table.rowHeight = 85
     }
     
-
+    
     // 더미 데이터
     let dummyData: [ProfileItem] = [
-        ProfileItem(iconName: "image01", title: "주행 기록"),
-        ProfileItem(iconName: "image02", title: "주행 가이드"),
-        ProfileItem(iconName: "image03", title: "친구 추천"),
-        ProfileItem(iconName: "image04", title: "나의 쿠폰"),
-        ProfileItem(iconName: "image05", title: "로그아웃")
+        ProfileItem(iconName: "image01", title: "Driving Record"),
+        ProfileItem(iconName: "image02", title: "Driving Guide"),
+        ProfileItem(iconName: "icon3", title: "Friend Recommendation"),
+        ProfileItem(iconName: "Icon04", title: "My Coupon"),
+        ProfileItem(iconName: "image05", title: "Log Out")
     ]
-
-
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dummyData.count
     }
@@ -42,7 +42,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileList", for: indexPath) as! ProfileTableViewCell
         let item = dummyData[indexPath.row]
         
-    //  cell.iconImageView.image = UIImage(systemName: "scooter")
+        //  cell.iconImageView.image = UIImage(systemName: "scooter")
         cell.iconImageView.image = UIImage(named: item.iconName)
         cell.textLabe.text = item.title
         cell.selectionStyle = .none
@@ -50,5 +50,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
 }
+
 
 
